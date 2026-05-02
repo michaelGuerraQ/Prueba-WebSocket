@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard IoT</title>
+</head>
+<body>
+
+<h1>Datos en vivo</h1>
+
+<p id="data">Esperando datos...</p>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+
+<script>
+  const socket = io("http://localhost:3000");
+
+  socket.on("dashboard", (data) => {
+    document.getElementById("data").innerText =
+      "Nodo: " + data.nodo +
+      " | Temp: " + data.temperatura +
+      " | H. Aire: " + data.humedadAire +
+      " | H. Suelo: " + data.humedadSuelo;
+  });
+</script>
+
+</body>
+</html>
