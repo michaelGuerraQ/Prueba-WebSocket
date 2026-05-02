@@ -1,10 +1,24 @@
-# Sistema IoT de Monitoreo del Cultivo de Arándanos en Tiempo Real
+<p align="center">
+  <img src="https://img.shields.io/badge/WebSocket-Socket.IO-blue?style=for-the-badge&logo=socket.io">
+  <img src="https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge&logo=node.js">
+  <img src="https://img.shields.io/badge/Express-Server-black?style=for-the-badge&logo=express">
+  <img src="https://img.shields.io/badge/HTML-Frontend-orange?style=for-the-badge&logo=html5">
+  <img src="https://img.shields.io/badge/Estado-Activo-brightgreen?style=for-the-badge">
+</p>
+
+<h1 align="center">⚡ Prueba de WebSocket con Socket.IO</h1>
+
+<p align="center">
+Sistema básico para aprender comunicación en tiempo real usando <b>WebSocket</b> con <b>Node.js</b> y <b>Socket.IO</b>.
+</p>
+
+---
 
 ## 📌 Descripción
 
-Este proyecto implementa un sistema IoT básico que permite monitorear variables ambientales como temperatura, humedad del aire y humedad del suelo en tiempo real utilizando WebSocket (Socket.IO).
+Este proyecto es una prueba práctica para entender el funcionamiento de WebSocket.
 
-Los datos son enviados en formato JSON y visualizados dinámicamente en un dashboard web.
+Permite enviar y recibir datos en tiempo real entre cliente y servidor usando eventos.
 
 ---
 
@@ -19,46 +33,52 @@ Los datos son enviados en formato JSON y visualizados dinámicamente en un dashb
 
 ## 🧠 Funcionamiento
 
-El sistema simula sensores IoT que envían datos al servidor.  
-El servidor procesa los datos y los envía en tiempo real al frontend.
+El cliente envía datos mediante eventos WebSocket.  
+El servidor recibe los datos y responde en tiempo real.
 
 ---
 
 ## 🔄 Flujo del sistema
+
 
 ---
 
 ## 📦 Instalación
 
 Instalar dependencias:
+ - npm install
+- pm install express socket.io
 
-```bash
-npm install
-npm install express socket.io
+  Link : Test Socket.IO Server
 
-▶️ Ejecución
-node server.js
-🌐 Abrir en navegador
+[🔗 Test Socket.IO Server](https://piehost.com/socketio-tester)
+
+🧪 Probar WebSocket
+
+👉 https://piehost.com/socketio-tester
+
+Conexión:
+
 http://localhost:3000
 
-🧪 Prueba con Socket.IO
+Evento:
 
-Usar la siguiente herramienta:
-
-https://piehost.com/socketio-tester
-🔌 Conexión
-http://localhost:3000
-📡 Evento
 sensor
-📦 Payload (JSON)
+
+Payload:
+
 {"nodo":"nodo1","temperatura":28,"humedadAire":70,"humedadSuelo":20}
-## 📸 Capturas del sistema
+
+## 🧪 Test Socket.IO Server
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/be35ec19-7075-4921-97e5-8b6ef4d1e40b" width="600">
+  <img src="https://raw.githubusercontent.com/michaelGuerraQ/Prueba-WebSocket/main/testSocket.png" width="600">
 </p>
+
+---
+
+## 📊 Dashboard
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4698f1fb-4193-4cec-80a6-eb59722c52d3" width="600">
+  <img src="https://raw.githubusercontent.com/michaelGuerraQ/Prueba-WebSocket/main/dashbord.png" width="600">
 </p>
-
